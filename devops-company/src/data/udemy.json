@@ -1,0 +1,105 @@
+[
+    {
+        "id": 1,
+        "title": "Complete DevOps Bootcamp - Zero to Hero",
+        "description": "Master DevOps from fundamentals to advanced concepts. This comprehensive course covers Docker, Kubernetes, CI/CD, AWS, Terraform, and more. Includes 50+ hours of content with hands-on projects and real-world scenarios.",
+        "thumbnail": "/docker_course_thumbnail_1764860081738.png",
+        "price": "$49.99",
+        "rating": 4.8,
+        "students": "45,230",
+        "category": "DevOps",
+        "tags": [
+            "DevOps",
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "CI/CD"
+        ],
+        "url": "https://www.udemy.com/course/devops-bootcamp/"
+    },
+    {
+        "id": 2,
+        "title": "Kubernetes Mastery: From Beginner to Advanced",
+        "description": "Deep dive into Kubernetes container orchestration. Learn cluster management, deployments, services, ingress, helm charts, and production best practices with real-world examples.",
+        "thumbnail": "/devops_kubernetes_thumbnail_1764860053232.png",
+        "price": "$39.99",
+        "rating": 4.9,
+        "students": "32,450",
+        "category": "Kubernetes",
+        "tags": [
+            "Kubernetes",
+            "Containers",
+            "Cloud Native",
+            "Orchestration"
+        ],
+        "url": "https://www.udemy.com/course/kubernetes-mastery/"
+    },
+    {
+        "id": 3,
+        "title": "AWS Cloud Infrastructure & DevOps",
+        "description": "Build and manage scalable cloud infrastructure on AWS. Covers EC2, VPC, S3, RDS, Lambda, CloudFormation, and DevOps best practices for AWS environments.",
+        "thumbnail": "/aws_project_thumbnail_1764860243158.png",
+        "price": "$44.99",
+        "rating": 4.7,
+        "students": "28,890",
+        "category": "AWS",
+        "tags": [
+            "AWS",
+            "Cloud",
+            "Infrastructure",
+            "DevOps"
+        ],
+        "url": "https://www.udemy.com/course/aws-devops/"
+    },
+    {
+        "id": 4,
+        "title": "Terraform Infrastructure as Code Complete Course",
+        "description": "Master Infrastructure as Code with Terraform. Learn to provision and manage cloud resources across AWS, Azure, and GCP. Includes modules, state management, and advanced patterns.",
+        "thumbnail": "/terraform_course_thumbnail_1764860169868.png",
+        "price": "$34.99",
+        "rating": 4.8,
+        "students": "19,670",
+        "category": "Terraform",
+        "tags": [
+            "Terraform",
+            "IaC",
+            "Cloud",
+            "Automation"
+        ],
+        "url": "https://www.udemy.com/course/terraform-iac/"
+    },
+    {
+        "id": 5,
+        "title": "CI/CD Pipelines with Jenkins & GitLab",
+        "description": "Build robust CI/CD pipelines for modern applications. Master Jenkins, GitLab CI, automated testing, deployment strategies, and DevOps automation workflows.",
+        "thumbnail": "/cicd_pipeline_thumbnail_1764860137078.png",
+        "price": "$29.99",
+        "rating": 4.6,
+        "students": "24,120",
+        "category": "CI/CD",
+        "tags": [
+            "Jenkins",
+            "GitLab",
+            "CI/CD",
+            "Automation"
+        ],
+        "url": "https://www.udemy.com/course/cicd-pipelines/"
+    },
+    {
+        "id": 6,
+        "title": "Docker & Microservices Architecture",
+        "description": "Learn Docker containerization and microservices design patterns. Build, deploy, and scale containerized applications with Docker Compose and best practices.",
+        "thumbnail": "/docker_course_thumbnail_1764860081738.png",
+        "price": "$39.99",
+        "rating": 4.7,
+        "students": "35,780",
+        "category": "Docker",
+        "tags": [
+            "Docker",
+            "Microservices",
+            "Containers",
+            "Architecture"
+        ],
+        "url": "https://www.udemy.com/course/docker-microservices/"
+    }
+]

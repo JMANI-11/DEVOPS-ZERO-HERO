@@ -1,0 +1,9 @@
+{
+  "label": "pypiserver",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "PyPI Server Helm Chart",
+    "description": "Documentation for deploying minimal PyPI Server on Kubernetes using the community-maintained Helm chart."
+  }
+}

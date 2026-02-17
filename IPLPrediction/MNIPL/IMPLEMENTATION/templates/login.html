@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        h1   {color: blue;}
+        p    {color: red;}
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body style="background-image:url('/static/Slide6.JPG');background-repeat:no-repeat; background-size:100% 100vh;">
+
+<div align="center">
+<h1>Login</h1>
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+<button type="submit">Ready To Play</button>
+<input type="hidden" name="validation" value="onlyfromloginpage"/>
+
+</form>
+    <br><br>
+<a href="/signup">Not registered? Create an account</a>
+    <br><br>
+<a href="/password_reset/">Forgot Password?</a>
+    <br><br>
+    <br><br>
+    <br><br>
+
+<a href="/leaderboard/">Leader Board</a>
+</div>
+</body>
+</html>

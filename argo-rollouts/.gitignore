@@ -1,0 +1,18 @@
+.vscode/
+.idea/
+.DS_Store
+dist/
+*.iml
+# delve debug binaries
+__debug_bin
+cmd/**/debug
+debug.test
+coverage.out
+coverage.html
+site/
+vendor/
+# generated
+docs/generated
+# static
+server/static/*
+!server/static/.gitkeep

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+
+        h1   {color: blue;}
+        p    {color: red;}
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>MNIPL</title>
+
+
+
+</head>
+
+<body style="background-image:url('/static/Slide6.JPG');background-repeat:no-repeat; background-size:100% 100vh;">
+
+<div class="container" align="center">
+    <h1>IPL Prediction Contest</h1>
+    <form action="/singlematchresult/" method="post">{% csrf_token %}
+        <h2>Predict The Winning Team</h2>
+        <h3>First Match</h3>
+        <br>
+        <table>
+            <tr>
+                <td>
+        <input type="radio" name="PickTheBest1" value={{team1}} required> {{team1}}<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <input type="radio" name="PickTheBest1" value={{team2}} required> {{team2}}<br><br>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+
+        <button type="submit" id="submit">Submit</button>
+        <br><br>
+        <a href="/knowyourscore/">Know Your Score</a>
+            <br><br>
+        <a href="/leaderboard/">Leader Board</a>
+    </form>
+</div>
+
+<div class="footer" align="center">
+    <h4> Responses are not accepted after 4 pm</h4>
+</div>
+
+
+</body>
+</html>

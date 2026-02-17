@@ -1,0 +1,46 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: argo-rollouts-manager.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: RolloutManager is the Schema for the RolloutManagers API
+      displayName: Rollout Manager
+      kind: RolloutManager
+      name: rolloutmanagers.argoproj.io
+      version: v1alpha1
+  description: Kubernetes Operator for managing argo-rollouts.
+  displayName: argo-rollouts-manager
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - argo-rollouts
+  - progressive delivery
+  - argoproj
+  links:
+  - name: Argo Rollouts Manager
+    url: https://argo-rollouts-manager.domain
+  maturity: alpha
+  provider:
+    name: Argo Community
+  version: 0.0.0

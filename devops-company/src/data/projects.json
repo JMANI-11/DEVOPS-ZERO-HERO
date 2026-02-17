@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "E-Commerce Platform Migration to AWS",
+        "description": "Led the complete migration of a monolithic e-commerce platform to AWS cloud infrastructure. Implemented auto-scaling, load balancing, and multi-region deployment for high availability.",
+        "thumbnail": "/aws_project_thumbnail_1764860243158.png",
+        "technologies": [
+            "AWS",
+            "Docker",
+            "Kubernetes",
+            "Terraform",
+            "Jenkins"
+        ],
+        "category": "Cloud Migration",
+        "client": "RetailCorp Inc",
+        "completionDate": "Dec 2023"
+    },
+    {
+        "id": 2,
+        "title": "Kubernetes Cluster Setup for FinTech",
+        "description": "Designed and deployed a production-grade Kubernetes cluster for a financial services company. Implemented security best practices, monitoring, and disaster recovery solutions.",
+        "thumbnail": "/devops_kubernetes_thumbnail_1764860053232.png",
+        "technologies": [
+            "Kubernetes",
+            "Helm",
+            "Prometheus",
+            "Grafana",
+            "ArgoCD"
+        ],
+        "category": "Infrastructure",
+        "client": "FinServe Solutions",
+        "completionDate": "Nov 2023"
+    },
+    {
+        "id": 3,
+        "title": "CI/CD Pipeline Automation",
+        "description": "Built comprehensive CI/CD pipelines for microservices architecture. Automated testing, security scanning, and multi-environment deployments with zero-downtime releases.",
+        "thumbnail": "/cicd_pipeline_thumbnail_1764860137078.png",
+        "technologies": [
+            "Jenkins",
+            "GitLab CI",
+            "Docker",
+            "SonarQube",
+            "Nexus"
+        ],
+        "category": "Automation",
+        "client": "TechStart Labs",
+        "completionDate": "Oct 2023"
+    },
+    {
+        "id": 4,
+        "title": "Infrastructure as Code Implementation",
+        "description": "Transformed manual infrastructure provisioning to fully automated IaC using Terraform. Managed multi-cloud resources across AWS and Azure with version control.",
+        "thumbnail": "/terraform_course_thumbnail_1764860169868.png",
+        "technologies": [
+            "Terraform",
+            "AWS",
+            "Azure",
+            "Git",
+            "Ansible"
+        ],
+        "category": "IaC",
+        "client": "CloudNative Co",
+        "completionDate": "Sep 2023"
+    },
+    {
+        "id": 5,
+        "title": "Microservices Containerization",
+        "description": "Containerized legacy monolithic application into microservices architecture. Implemented Docker containers, service mesh, and orchestration with Kubernetes.",
+        "thumbnail": "/docker_course_thumbnail_1764860081738.png",
+        "technologies": [
+            "Docker",
+            "Kubernetes",
+            "Istio",
+            "Redis",
+            "MongoDB"
+        ],
+        "category": "Modernization",
+        "client": "Enterprise Systems",
+        "completionDate": "Aug 2023"
+    },
+    {
+        "id": 6,
+        "title": "Monitoring & Observability Platform",
+        "description": "Deployed comprehensive monitoring solution with Prometheus, Grafana, and ELK stack. Implemented alerting, log aggregation, and performance dashboards.",
+        "thumbnail": "/cicd_pipeline_thumbnail_1764860137078.png",
+        "technologies": [
+            "Prometheus",
+            "Grafana",
+            "ELK Stack",
+            "Jaeger",
+            "AlertManager"
+        ],
+        "category": "Monitoring",
+        "client": "DataFlow Inc",
+        "completionDate": "Jul 2023"
+    }
+]

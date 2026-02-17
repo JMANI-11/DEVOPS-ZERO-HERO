@@ -1,0 +1,32 @@
+# Jekyll configuration file
+
+title: "My Portfolio Website"
+description: "A portfolio website showcasing my free courses and testimonials."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude these files from the site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social media handles
+social:
+  twitter: your_twitter_handle
+  github: your_github_handle
+  linkedin: your_linkedin_handle
+  youtube: your_youtube_channel

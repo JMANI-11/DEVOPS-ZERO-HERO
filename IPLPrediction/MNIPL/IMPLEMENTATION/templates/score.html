@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        h1   {color: blue;}
+        p    {color: red;}
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>Score</title>
+</head>
+<body style="background-image:url('/static/Slide6.JPG');background-repeat:no-repeat; background-size:100% 100vh;">
+
+<div align="center">
+<h1>Response History</h1>
+    <br><br>
+    <table border="1">
+        <tr>
+            <th>Date</th>
+            <th>Match1</th>
+            <th>Picked</th>
+            <th>Match2</th>
+            <th>Picked</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>
+            {% for i in date%}
+
+            {{ i }}
+            <br>
+             {% endfor %}
+            </td>
+
+            <td>
+            {% for i in match1%}
+
+            {{ i }}
+            <br>
+                
+            {% endfor %}
+            </td>
+            <td>
+            {% for i in choice1%}
+
+            {{ i }}
+            <br>
+            {% endfor %}
+            </td>
+            <td>
+            {% for i in match2%}
+
+            {{ i }}
+            <br>
+            {% endfor %}
+            </td>
+            <td>
+            {% for i in choice2%}
+
+            {{ i }}
+            <br>
+            {% endfor %}
+            </td>
+            <td>
+            {% for i in points%}
+
+            {{ i }}
+            <br>
+            {% endfor %}
+            </td>
+
+        </tr>
+
+
+    </table>
+
+
+</div>
+</body>
+</html>

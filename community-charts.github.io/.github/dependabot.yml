@@ -1,0 +1,45 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      - dependency-name: "@docusaurus/core"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@docusaurus/preset-classic"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@docusaurus/theme-mermaid"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@docusaurus/module-type-aliases"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@docusaurus/tsconfig"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@docusaurus/types"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+    groups:
+      npm-deps:
+        patterns:
+          - "*"

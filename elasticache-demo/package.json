@@ -1,0 +1,8 @@
+{
+  "name": "go-redis-app",
+  "private": true,
+  "scripts": {
+    "start": "node -e \"console.log('\\n🚨 NOTE: This app requires Redis to run properly. Make sure Redis is available at the configured URL.\\n\\nCheck README.md for setup instructions.\\n'); require('child_process').spawn('go', ['run', 'main.go'], {stdio: 'inherit'});\"",
+    "test": "go test ./..."
+  }
+}

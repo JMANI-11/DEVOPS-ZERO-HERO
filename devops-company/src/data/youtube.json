@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "title": "Complete Kubernetes Tutorial for Beginners",
+        "description": "Learn Kubernetes from scratch with hands-on examples. This comprehensive tutorial covers pods, deployments, services, and more. Perfect for DevOps engineers looking to master container orchestration.",
+        "thumbnail": "/devops_kubernetes_thumbnail_1764860053232.png",
+        "duration": "3:45:20",
+        "views": "245K",
+        "category": "Kubernetes",
+        "tags": [
+            "Kubernetes",
+            "DevOps",
+            "Containers",
+            "Cloud Native"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    },
+    {
+        "id": 2,
+        "title": "Docker Zero to Hero - Complete Docker Tutorial",
+        "description": "Master Docker containerization from basics to advanced concepts. Learn Docker images, containers, volumes, networks, and Docker Compose with real-world projects.",
+        "thumbnail": "/docker_course_thumbnail_1764860081738.png",
+        "duration": "4:12:15",
+        "views": "312K",
+        "category": "Docker",
+        "tags": [
+            "Docker",
+            "Containers",
+            "DevOps",
+            "Microservices"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    },
+    {
+        "id": 3,
+        "title": "CI/CD Pipeline Complete Guide with Jenkins",
+        "description": "Build production-ready CI/CD pipelines using Jenkins. Learn continuous integration, continuous deployment, and automation best practices for modern DevOps workflows.",
+        "thumbnail": "/cicd_pipeline_thumbnail_1764860137078.png",
+        "duration": "2:58:30",
+        "views": "189K",
+        "category": "CI/CD",
+        "tags": [
+            "Jenkins",
+            "CI/CD",
+            "Automation",
+            "DevOps"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    },
+    {
+        "id": 4,
+        "title": "Terraform Complete Course - Infrastructure as Code",
+        "description": "Learn Infrastructure as Code with Terraform. Master AWS provisioning, state management, modules, and best practices for managing cloud infrastructure.",
+        "thumbnail": "/terraform_course_thumbnail_1764860169868.png",
+        "duration": "5:20:45",
+        "views": "156K",
+        "category": "Terraform",
+        "tags": [
+            "Terraform",
+            "IaC",
+            "AWS",
+            "Cloud"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    },
+    {
+        "id": 5,
+        "title": "AWS DevOps Complete Bootcamp",
+        "description": "Comprehensive AWS DevOps training covering EC2, S3, RDS, Lambda, CloudFormation, and more. Build scalable cloud infrastructure on AWS.",
+        "thumbnail": "/aws_project_thumbnail_1764860243158.png",
+        "duration": "6:15:30",
+        "views": "278K",
+        "category": "AWS",
+        "tags": [
+            "AWS",
+            "Cloud",
+            "DevOps",
+            "Infrastructure"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    },
+    {
+        "id": 6,
+        "title": "GitOps with ArgoCD - Complete Tutorial",
+        "description": "Master GitOps principles and ArgoCD for Kubernetes deployments. Learn declarative continuous delivery and automated application deployment.",
+        "thumbnail": "/devops_kubernetes_thumbnail_1764860053232.png",
+        "duration": "2:35:20",
+        "views": "98K",
+        "category": "GitOps",
+        "tags": [
+            "ArgoCD",
+            "GitOps",
+            "Kubernetes",
+            "CD"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    },
+    {
+        "id": 7,
+        "title": "Prometheus & Grafana Monitoring Setup",
+        "description": "Complete monitoring solution with Prometheus and Grafana. Learn metrics collection, alerting, and visualization for production systems.",
+        "thumbnail": "/cicd_pipeline_thumbnail_1764860137078.png",
+        "duration": "3:10:15",
+        "views": "134K",
+        "category": "Monitoring",
+        "tags": [
+            "Prometheus",
+            "Grafana",
+            "Monitoring",
+            "Observability"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    },
+    {
+        "id": 8,
+        "title": "Ansible Automation Complete Guide",
+        "description": "Automate infrastructure management with Ansible. Learn playbooks, roles, inventory management, and configuration management best practices.",
+        "thumbnail": "/terraform_course_thumbnail_1764860169868.png",
+        "duration": "4:05:40",
+        "views": "167K",
+        "category": "Automation",
+        "tags": [
+            "Ansible",
+            "Automation",
+            "Configuration Management",
+            "DevOps"
+        ],
+        "url": "https://youtube.com/@AbhishekVeeramalla"
+    }
+]

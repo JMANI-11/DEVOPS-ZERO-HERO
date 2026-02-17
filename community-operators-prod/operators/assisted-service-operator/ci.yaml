@@ -1,0 +1,14 @@
+---
+# Use `replaces-mode` or `semver-mode`. Once you switch to `semver-mode`, there is no easy way back.
+updateGraph: replaces-mode
+packagemanifestClusterVersionLabel: auto
+reviewers:
+  - rwsu
+  - djzager
+  - flaper87
+  - celebdor
+  - lranjbar
+  - mkowalski
+  - pawanpinjarkar
+  - filanov
+  - osherdp

@@ -1,0 +1,27 @@
+# permissions for end users to view rolloutmanagers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: rolloutmanagers-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: argo-rollouts-manager
+    app.kubernetes.io/part-of: argo-rollouts-manager
+    app.kubernetes.io/managed-by: kustomize
+  name: rolloutmanagers-viewer-role
+rules:
+- apiGroups:
+  - argoproj.io
+  resources:
+  - rolloutmanagers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - argoproj.io
+  resources:
+  - rolloutmanagers/status
+  verbs:
+  - get

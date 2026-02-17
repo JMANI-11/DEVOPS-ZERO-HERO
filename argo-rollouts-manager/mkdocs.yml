@@ -1,0 +1,30 @@
+site_name: Argo Rollouts Manager
+site_url: ""
+repo_url: https://github.com/iam-veeramalla/argo-rollouts-manager
+strict: true
+theme:
+  name: material
+  palette:
+    primary: teal
+  font:
+    text: 'Work Sans'
+  logo: 'assets/logo.png'
+extra_css:
+  - 'assets/extra.css'
+markdown_extensions:
+- codehilite
+- admonition
+- toc:
+    permalink: true
+nav:
+  - CRD Reference: crd_reference.md
+  - Developer Guide: developer-guide/developer_guide.md
+  - E2E Tests:
+    - Usage: e2e-tests/usage.md
+    - Guide: e2e-tests/guide.md
+  - Install:
+    - Kustomize: install/kustomize.md
+    - OLM: install/olm.md
+  - Usage:
+    - Getting Started: usage/getting_started.md
+  - Overview: index.md

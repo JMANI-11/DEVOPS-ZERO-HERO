@@ -1,0 +1,520 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: |-
+      [
+        {
+          "apiVersion": "argoproj.io/v1alpha1",
+          "kind": "RolloutManager",
+          "metadata": {
+            "labels": {
+              "app.kubernetes.io/created-by": "argo-rollouts-manager",
+              "app.kubernetes.io/instance": "rolloutmanager-sample",
+              "app.kubernetes.io/managed-by": "kustomize",
+              "app.kubernetes.io/name": "rolloutmanagers",
+              "app.kubernetes.io/part-of": "argo-rollouts-manager"
+            },
+            "name": "rolloutmanager-sample"
+          },
+          "spec": {}
+        }
+      ]
+    capabilities: Basic Install
+    createdAt: "2023-05-09T11:21:43Z"
+    operators.operatorframework.io/builder: operator-sdk-v1.28.0
+    operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+  name: argo-rollouts-manager.v0.0.1
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - kind: AnalysisRun
+      name: analysisruns.argoproj.io
+      version: v1alpha1
+    - kind: AnalysisTemplate
+      name: analysistemplates.argoproj.io
+      version: v1alpha1
+    - kind: ClusterAnalysisTemplate
+      name: clusteranalysistemplates.argoproj.io
+      version: v1alpha1
+    - kind: Experiment
+      name: experiments.argoproj.io
+      version: v1alpha1
+    - description: RolloutManager is the Schema for the RolloutManagers API
+      displayName: Rollout Manager
+      kind: RolloutManager
+      name: rolloutmanagers.argoproj.io
+      version: v1alpha1
+    - kind: Rollout
+      name: rollouts.argoproj.io
+      version: v1alpha1
+  description: Kubernetes Operator for managing argo-rollouts.
+  displayName: argo-rollouts-manager
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      clusterPermissions:
+      - rules:
+        - apiGroups:
+          - ""
+          resources:
+          - configmaps
+          - endpoints
+          - events
+          - namespaces
+          - pods
+          - secrets
+          - serviceaccounts
+          - services
+          - services/finalizers
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - ""
+          resources:
+          - deployments
+          verbs:
+          - get
+          - list
+          - watch
+        - apiGroups:
+          - ""
+          resources:
+          - pods/eviction
+          verbs:
+          - create
+        - apiGroups:
+          - ""
+          resources:
+          - podtemplates
+          verbs:
+          - get
+          - list
+          - watch
+        - apiGroups:
+          - appmesh.k8s.aws
+          resources:
+          - virtualnodes
+          - virtualrouters
+          verbs:
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - appmesh.k8s.aws
+          resources:
+          - virtualservices
+          verbs:
+          - get
+          - list
+          - watch
+        - apiGroups:
+          - apps
+          resources:
+          - deployments
+          - podtemplates
+          - replicasets
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - apps
+          resources:
+          - deployments/finalizers
+          verbs:
+          - update
+        - apiGroups:
+          - argoproj.io
+          resources:
+          - analysisruns
+          - analysisruns/finalizers
+          - experiments
+          - experiments/finalizers
+          verbs:
+          - create
+          - delete
+          - deletecollection
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - argoproj.io
+          resources:
+          - analysistemplates
+          verbs:
+          - create
+          - delete
+          - deletecollection
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - argoproj.io
+          resources:
+          - clusteranalysistemplates
+          verbs:
+          - create
+          - delete
+          - deletecollection
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - argoproj.io
+          resources:
+          - rolloutmanagers
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - argoproj.io
+          resources:
+          - rolloutmanagers/finalizers
+          verbs:
+          - update
+        - apiGroups:
+          - argoproj.io
+          resources:
+          - rolloutmanagers/status
+          verbs:
+          - get
+          - patch
+          - update
+        - apiGroups:
+          - argoproj.io
+          resources:
+          - rollouts
+          - rollouts/finalizers
+          - rollouts/scale
+          - rollouts/status
+          verbs:
+          - create
+          - delete
+          - deletecollection
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - batch
+          resources:
+          - jobs
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - coordination.k8s.io
+          resources:
+          - leases
+          verbs:
+          - create
+          - get
+          - update
+        - apiGroups:
+          - elbv2.k8s.aws
+          resources:
+          - targetgroupbindings
+          verbs:
+          - get
+          - list
+        - apiGroups:
+          - extensions
+          resources:
+          - ingresses
+          verbs:
+          - create
+          - get
+          - list
+          - patch
+          - watch
+        - apiGroups:
+          - getambassador.io
+          resources:
+          - ambassadormappings
+          - mappings
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - update
+          - watch
+        - apiGroups:
+          - networking.istio.io
+          resources:
+          - destinationrules
+          - virtualservices
+          verbs:
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - networking.k8s.io
+          resources:
+          - ingresses
+          verbs:
+          - create
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resources:
+          - clusterrolebindings
+          - clusterroles
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - rbac.authorization.k8s.io
+          resources:
+          - rolebindings
+          - roles
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - split.smi-spec.io
+          resources:
+          - trafficsplits
+          verbs:
+          - create
+          - get
+          - patch
+          - update
+          - watch
+        - apiGroups:
+          - traefik.containo.us
+          resources:
+          - traefikservices
+          verbs:
+          - get
+          - update
+          - watch
+        - apiGroups:
+          - x.getambassador.io
+          resources:
+          - ambassadormappings
+          - mappings
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - update
+          - watch
+        - apiGroups:
+          - authentication.k8s.io
+          resources:
+          - tokenreviews
+          verbs:
+          - create
+        - apiGroups:
+          - authorization.k8s.io
+          resources:
+          - subjectaccessreviews
+          verbs:
+          - create
+        serviceAccountName: argo-rollouts-manager-controller-manager
+      deployments:
+      - label:
+          app.kubernetes.io/component: manager
+          app.kubernetes.io/created-by: argo-rollouts-manager
+          app.kubernetes.io/instance: controller-manager
+          app.kubernetes.io/managed-by: kustomize
+          app.kubernetes.io/name: deployment
+          app.kubernetes.io/part-of: argo-rollouts-manager
+          control-plane: controller-manager
+        name: argo-rollouts-manager-controller-manager
+        spec:
+          replicas: 1
+          selector:
+            matchLabels:
+              control-plane: controller-manager
+          strategy: {}
+          template:
+            metadata:
+              annotations:
+                kubectl.kubernetes.io/default-container: manager
+              labels:
+                control-plane: controller-manager
+            spec:
+              affinity:
+                nodeAffinity:
+                  requiredDuringSchedulingIgnoredDuringExecution:
+                    nodeSelectorTerms:
+                    - matchExpressions:
+                      - key: kubernetes.io/arch
+                        operator: In
+                        values:
+                        - amd64
+                        - arm64
+                        - ppc64le
+                        - s390x
+                      - key: kubernetes.io/os
+                        operator: In
+                        values:
+                        - linux
+              containers:
+              - args:
+                - --secure-listen-address=0.0.0.0:8443
+                - --upstream=http://127.0.0.1:8080/
+                - --logtostderr=true
+                - --v=0
+                image: gcr.io/kubebuilder/kube-rbac-proxy:v0.13.1
+                name: kube-rbac-proxy
+                ports:
+                - containerPort: 8443
+                  name: https
+                  protocol: TCP
+                resources:
+                  limits:
+                    cpu: 500m
+                    memory: 128Mi
+                  requests:
+                    cpu: 5m
+                    memory: 64Mi
+                securityContext:
+                  allowPrivilegeEscalation: false
+                  capabilities:
+                    drop:
+                    - ALL
+              - args:
+                - --health-probe-bind-address=:8081
+                - --metrics-bind-address=127.0.0.1:8080
+                - --leader-elect
+                command:
+                - /manager
+                image: quay.io/aveerama/argo-rollouts-manager:v0.0.1
+                livenessProbe:
+                  httpGet:
+                    path: /healthz
+                    port: 8081
+                  initialDelaySeconds: 15
+                  periodSeconds: 20
+                name: manager
+                readinessProbe:
+                  httpGet:
+                    path: /readyz
+                    port: 8081
+                  initialDelaySeconds: 5
+                  periodSeconds: 10
+                resources:
+                  limits:
+                    cpu: 500m
+                    memory: 128Mi
+                  requests:
+                    cpu: 10m
+                    memory: 64Mi
+                securityContext:
+                  allowPrivilegeEscalation: false
+                  capabilities:
+                    drop:
+                    - ALL
+              securityContext:
+                runAsNonRoot: true
+              serviceAccountName: argo-rollouts-manager-controller-manager
+              terminationGracePeriodSeconds: 10
+      permissions:
+      - rules:
+        - apiGroups:
+          - ""
+          resources:
+          - configmaps
+          verbs:
+          - get
+          - list
+          - watch
+          - create
+          - update
+          - patch
+          - delete
+        - apiGroups:
+          - coordination.k8s.io
+          resources:
+          - leases
+          verbs:
+          - get
+          - list
+          - watch
+          - create
+          - update
+          - patch
+          - delete
+        - apiGroups:
+          - ""
+          resources:
+          - events
+          verbs:
+          - create
+          - patch
+        serviceAccountName: argo-rollouts-manager-controller-manager
+    strategy: deployment
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - argo-rollouts
+  - progressive delivery
+  - argoproj
+  links:
+  - name: Argo Rollouts Manager
+    url: https://argo-rollouts-manager.domain
+  maturity: alpha
+  provider:
+    name: Argo Community
+  version: 0.0.1
