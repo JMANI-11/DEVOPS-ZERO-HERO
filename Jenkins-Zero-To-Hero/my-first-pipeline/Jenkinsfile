@@ -1,11 +1,36 @@
 pipeline {
-  agent {
-    docker { image 'node:16-alpine' }
-  }
+  agent any
+
   stages {
-    stage('Test') {
+
+    stage('Pull Image') {
       steps {
-        sh 'node --version'
+        sh 'docker pull jmanishankar/nginxbirth'
+      }
+    }
+
+    stage('Stop Old Container (if exists)') {
+      steps {
+        sh '''
+        docker rm -f nginxbirth-container || true
+        '''
+      }
+    }
+
+    stage('Run Container') {
+      steps {
+        sh '''
+        docker run -d \
+        --name nginxbirth-container \
+        -p 80:80 \
+        jmanishankar/nginxbirth
+        '''
+      }
+    }
+
+    stage('Verify') {
+      steps {
+        sh 'docker ps'
       }
     }
   }
