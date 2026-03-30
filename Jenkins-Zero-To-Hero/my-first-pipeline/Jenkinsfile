@@ -21,7 +21,7 @@ pipeline {
       steps {
         sh '''
         docker run -d \
-        --name nginxbirth-container \
+        --name alc-jenkins-pipeline \
         -p 80:80 \
         jmanishankar/nginxbirth
         '''
